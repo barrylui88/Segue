@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import Date from "./components/date"
+import Name from "./components/name"
 import './App.css';
 
 function App() {
@@ -8,12 +9,24 @@ function App() {
       <div className="float-start date-module">
           <Date/>
       </div>
-      <header className="App-header">
+      
+
+  <div className="name">
+    <Name/>    
+  </div>
+
+
+
+
+<header className="App-header">
         
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+  <img src={logo} className="App-logo" alt="logo" />
+  <p>
+  Edit <code>src/App.js</code> and save to reload.
+  </p>
+
+        
+
         <a
           className="App-link"
           href="https://reactjs.org"
