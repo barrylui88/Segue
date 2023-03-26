@@ -8,7 +8,7 @@ import Timer from "./components/timer"
 function App() {
   return (
     <div className="App">
-      <div className="box date-module">
+      <div className="float-start date-module">
           <Date/>
     </div>
     
