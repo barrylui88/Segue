@@ -1,22 +1,26 @@
 import logo from './logo.svg';
 import Date from "./components/date"
 import Name from "./components/name"
-import './App.css';
+import Timer from "./components/timer"
+
+//import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <div className="float-start date-module">
+      <div className="box date-module">
           <Date/>
-      </div>
-      
+    </div>
+    
+    <div className="box name-module">
+      <Name/>    
+    </div>
 
-  <div className="name">
-    <Name/>    
-  </div>
-
-
-
+    <div className="box timer-module">
+      <Timer/>
+  
+    </div>
+    
 
 <header className="App-header">
         

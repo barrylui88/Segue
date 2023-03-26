@@ -5,7 +5,7 @@ import './date.js';
 
 
 function Name() {
-  return(<button type="button" className="btn btn-primary btn-lg">SEGUE</button>);
+  return(<h1 className="container">SEGUE</h1>);
 }
 
 export default Name;

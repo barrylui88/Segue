@@ -40,3 +40,20 @@
     transform: rotate(360deg);
   }
 }
+
+.box {
+  display: flex;
+  flex-direction: row;
+}
+
+.date-module {
+  flex: 1 1 auto;
+}
+
+.name-module {
+  flex: 1 1 auto;
+}
+
+.timer-module {
+  flex: 1 1 auto;
+}
