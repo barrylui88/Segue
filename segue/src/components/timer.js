@@ -3,12 +3,7 @@ import React, { useState, useRef, } from 'react'
 
 const Timer = () => {
 
-	// We need ref in this, because we are dealing
-	// with JS setInterval to keep track of it and
-	// stop it when needed
 	const Ref = useRef(null);
-
-	// The state for our timer
 	const [timer, setTimer] = useState('00:00:00');
 
 
@@ -28,9 +23,6 @@ const Timer = () => {
 					= getTimeRemaining(e);
 		if (total >= 0) {
 
-			// update the timer
-			// check if less than 10 then we need to
-			// add '0' at the beginning of the variable
 			setTimer(
 				(hours > 9 ? hours : '0' + hours) + ':' +
 				(minutes > 9 ? minutes : '0' + minutes) + ':'
@@ -41,15 +33,9 @@ const Timer = () => {
 
 
 	const clearTimer = (e) => {
-
-		// If you adjust it you should also need to
-		// adjust the Endtime formula we are about
-		// to code next	
+	
 		startTimer(e);
 
-		// If you try to remove this line the
-		// updating of timer Variable will be
-		// after 1000ms or 1sec
 		if (Ref.current) clearInterval(Ref.current);
 		const id = setInterval(() => {
 			startTimer(e);
@@ -60,23 +46,11 @@ const Timer = () => {
 	const getDeadTime = (min) => {
 		let deadline = new Date();
 
-		// This is where you need to adjust if
-		// you entend to add more time
+		
 		deadline.setSeconds(deadline.getSeconds() + min*60);
 		return deadline;
 	}
 
-	// We can use useEffect so that when the component
-	// mount the timer will start as soon as possible
-
-	// We put empty array to act as componentDid
-	// mount only
-
-
-	// Another way to call the clearTimer() to start
-	// the countdown is via action event from the
-	// button first we create function to be called
-	// by the button
 	const onClickReset5 = () => {
 		clearTimer(getDeadTime(5));
 	}
