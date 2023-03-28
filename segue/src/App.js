@@ -7,6 +7,7 @@ import Timer from "./components/timer"
 import MainSectionStart from "./components/main-section-start";
 import MainSectionWip from "./components/main-section-wip";
 import DateModule from "./components/date";
+import Activities from './components/activities/index';
 import './App.css';
 
 function App() {
@@ -42,6 +43,9 @@ function App() {
         </div>
         <div className="wip-body">
           <MainSectionWip/>
+        </div>
+        <div>
+          <Activities/>
         </div>
       </body>
     </div>
