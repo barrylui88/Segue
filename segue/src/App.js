@@ -4,6 +4,7 @@ import MainSectionStart from "./components/main-section-start";
 import MainSectionWip from "./components/main-section-wip";
 import DateModule from "./components/date";
 import Activities from './components/activities/index';
+import ActivitiesForm from "./components/activities/ActivitiesForm";
 import './App.css';
 
 function App() {
@@ -26,7 +27,8 @@ function App() {
       </nav> 
         
       <div className="start-body">
-        <MainSectionStart/>
+        <Activities/>
+        <ActivitiesForm/>
       </div>
 
       <div className="wip-body">
