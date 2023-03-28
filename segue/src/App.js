@@ -17,15 +17,18 @@ function App() {
               </div>
             </div>
           </div>
-               
-          <div className="card">
+
+          
+     
+          <div className="card" id="name-module">
             <div className="card-body">
               <div className="name-module">
                 <Name/>
               </div>
             </div>
           </div>
-
+          
+          
           <div className="card">
             <div className="card-body">
               <div className="timer-module">

@@ -75,7 +75,7 @@ const Timer = () => {
 	return (
 		<div className="box timer-module">
             <div className="container">
-        	    <h2>{timer}</h2>
+        	    <h1>{timer}</h1>
 			    
                 <div className="btn-group" role="group" aria-label="Basic example">
                     <button type="button" className="btn btn-primary" id="button1" onClick={onClickReset5}>5 min</button>
