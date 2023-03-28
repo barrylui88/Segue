@@ -1,6 +1,5 @@
 import Name from "./components/name"
 import Timer from "./components/timer"
-import MainSectionStart from "./components/main-section-start";
 import MainSectionWip from "./components/main-section-wip";
 import DateModule from "./components/date";
 import Activities from './components/activities/index';
@@ -10,23 +9,19 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <nav>
-        <header className="text-center name-module">
+      <div className="row top-bar">
+        <div className="float-start col date-module">
+          <DateModule/>
+        </div>
+        <div className="text-center col name-module">
           <Name/>
-        </header>
-
-        <div>
-          <div className="float-start date-module">
-            <DateModule/>
-          </div>
-
-          <div className="float-end timer-module">
-            <Timer/>
-          </div>
-        </div>  
-      </nav> 
-        
-      <div className="start-body">
+        </div>
+        <div className="float-end col timer-module">
+          <Timer/>
+        </div>
+      </div> 
+      
+      <div className="row start-body">
         <Activities/>
         <ActivitiesForm/>
       </div>

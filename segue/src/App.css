@@ -51,6 +51,11 @@
   letter-spacing: 0.2cm;
 }
 
+.top-bar {
+  display:flex;
+  flex-direction: row;
+}
+
 .start-body{
   display: inline;
 }
