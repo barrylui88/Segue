@@ -20,10 +20,9 @@ function App() {
           <Timer/>
         </div>
       </div> 
-      
+
       <div className="row start-body">
         <Activities/>
-        <ActivitiesForm/>
       </div>
 
       <div className="wip-body">
