@@ -1,39 +1,34 @@
 import Date from "./components/date"
 import Name from "./components/name"
 import Timer from "./components/timer"
-import MainSectionStart from "./components/main-section-start"
-import MainSectionWip from "./components/main-section-wip"
-
-
+import MainSectionWip from "./components/main-section-wip";
+import DateModule from "./components/date";
+import Activities from './components/activities/index';
+import ActivitiesForm from "./components/activities/ActivitiesForm";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <body>
-        <header>
-          <div className="float-start date-module">
-                <Date/>
-              </div><br/>
-        
-              <div className="name-module">
-                <Name/>
-              </div><br/>
-        
-              <div className="float-end timer-module">
-                <Timer/>
-              </div><br/>
-        </header>
-       
-      
-      
-        <div className="start-body">
-          <MainSectionStart/>
+      <div className="row top-bar">
+        <div className="float-start col date-module">
+          <DateModule/>
         </div>
-        <div className="wip-body">
-          <MainSectionWip/>
+        <div className="text-center col name-module">
+          <Name/>
         </div>
-      </body>
+        <div className="float-end col timer-module">
+          <Timer/>
+        </div>
+      </div> 
+
+      <div className="row start-body">
+        <Activities/>
+      </div>
+
+      <div className="wip-body">
+        <MainSectionWip/>
+      </div>
     </div>
 
   );
