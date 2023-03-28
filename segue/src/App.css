@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding: 20px
 }
 
 .App-logo {
@@ -11,10 +12,6 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.date-module {
-  height: 100px;
 }
 
 .App-header {
@@ -39,4 +36,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Our Custom CSS Tags */
+
+.date-component {
+  font-size: 1000px;
+}
+
+.start-body{
+
+}
+
+.wip-body {
+
 }
