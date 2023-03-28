@@ -3,6 +3,12 @@
   padding: 20px
 }
 
+.jumbotron {
+  background: linear-gradient(to right, navy, #c3faec, navy);
+}
+
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -29,16 +35,23 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-deck {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.card {
+  text-align:center;
 }
 
 /* Our Custom CSS Tags */
+
+.name-module {
+  letter-spacing: 0.2cm
+}
 
 .date-component {
   font-size: 1000px;
