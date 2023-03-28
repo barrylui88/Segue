@@ -1,10 +1,14 @@
 import React from "react";
 
 
-const dayjs=require('dayjs');
+const date = require('date-and-time');
 
-function Date() {
-    return(<div><h1>{dayjs().format('DD/MM/YYYY')}</h1></div>);
+const now = new Date();
+const today = date.format(now, 'DD/MM/YYYY');
+
+function DateModule () {
+    return (<p>{today}</p>)
+
 }
 
-export default Date;
+export default DateModule;

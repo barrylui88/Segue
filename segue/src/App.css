@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding: 20px
 }
 
 .jumbotron {
@@ -15,10 +16,6 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.date-module {
-  height: 100px;
 }
 
 .App-header {
@@ -47,6 +44,21 @@
 .card {
   text-align:center;
 }
+
+/* Our Custom CSS Tags */
+
 .name-module {
   letter-spacing: 0.2cm
+}
+
+.date-component {
+  font-size: 1000px;
+}
+
+.start-body{
+
+}
+
+.wip-body {
+
 }
