@@ -48,17 +48,13 @@
 /* Our Custom CSS Tags */
 
 .name-module {
-  letter-spacing: 0.2cm
-}
-
-.date-component {
-  font-size: 1000px;
+  letter-spacing: 0.2cm;
 }
 
 .start-body{
-
+  display: inline;
 }
 
 .wip-body {
-
+  display: inline;
 }

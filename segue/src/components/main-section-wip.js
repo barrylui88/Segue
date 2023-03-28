@@ -10,18 +10,19 @@ function fetchData() {
     fetch(GETurl)
       .then((response) => response.json())
       .then((json) => {
-        randomPokemonImage = json["sprites"]["front_default"];
-      });
+        randomPokemonImage = json["sprites"]["other"]["official-artwork"]["front_default"];
+        console.log(randomPokemonImage);
+      })
   }
-  
-  fetchData();
 
-function MainSectionWip () {
-    return (
+fetchData();
+  
+function MainSectionWip() {
+  return (
     <img 
-    src={randomPokemonImage}
+    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
     />
-    )
+  )
 }
 
 export default MainSectionWip;
