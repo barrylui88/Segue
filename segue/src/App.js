@@ -3,6 +3,7 @@ import Timer from "./components/timer"
 import MainSectionStart from "./components/main-section-start";
 import MainSectionWip from "./components/main-section-wip";
 import DateModule from "./components/date";
+import Activities from './components/activities/index';
 import './App.css';
 
 function App() {
