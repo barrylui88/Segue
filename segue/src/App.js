@@ -3,7 +3,6 @@ import Timer from "./components/timer"
 import MainSectionWip from "./components/main-section-wip";
 import DateModule from "./components/date";
 import Activities from './components/activities/index';
-//import ActivitiesForm from "./components/activities/ActivitiesForm";
 import './App.css';
 import './components/timer.css';
 import './components/name.css';
