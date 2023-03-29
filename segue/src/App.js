@@ -1,4 +1,3 @@
-import Date from "./components/date"
 import Name from "./components/name"
 import Timer from "./components/timer"
 import MainSectionWip from "./components/main-section-wip";
