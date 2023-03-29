@@ -2,7 +2,7 @@ import React from "react";
 import './main-section.css';
 
 //JS Variable
-let randomPokemonIndex = Math.floor(Math.random()*1008).toString();
+let randomPokemonIndex = Math.floor(Math.random()*200).toString();
 let GETurl = "https://pokeapi.co/api/v2/pokemon/" + randomPokemonIndex;
 let randomPokemonImage;
 let imageURL;
