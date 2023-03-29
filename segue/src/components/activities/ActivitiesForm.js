@@ -43,7 +43,7 @@ const ActivitiesForm = () => {
           <form onSubmit={handleFormSubmit}>
               <input type="text" value={inputValue} placeholder='Singing...' onChange={handleInputChange} />
           </form>
-          <button type="submit" className="btn btn-primary save-button">Save</button>
+          <button type="submit" className="btn btn-primary save-button" onClick={handleFormSubmit}>Save</button>
         </div>
       </div>
 
