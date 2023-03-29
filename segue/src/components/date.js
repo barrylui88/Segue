@@ -7,7 +7,7 @@ const now = new Date();
 const today = date.format(now, 'DD/MM/YYYY');
 
 function DateModule () {
-    return (<p>{today}</p>)
+    return (<h1>{today}</h1>)
 
 }
 

@@ -3,10 +3,6 @@
   padding: 20px
 }
 
-.jumbotron {
-  background: linear-gradient(to right, navy, #c3faec, white, #c3faec, navy);
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;

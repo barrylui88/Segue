@@ -3,14 +3,17 @@ import Timer from "./components/timer"
 import MainSectionWip from "./components/main-section-wip";
 import DateModule from "./components/date";
 import Activities from './components/activities/index';
-import ActivitiesForm from "./components/activities/ActivitiesForm";
+//import ActivitiesForm from "./components/activities/ActivitiesForm";
 import './App.css';
+import './components/timer.css';
+import './components/name.css';
+import './components/date.css';
 
 function App() {
   return (
     <div className="App">
       <div className="row top-bar">
-        <div className="float-start col date-module">
+        <div className="float-start baseline col date-module">
           <DateModule/>
         </div>
         <div className="text-center col name-module">
