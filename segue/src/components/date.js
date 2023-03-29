@@ -8,7 +8,6 @@ const today = date.format(now, 'DD/MM/YYYY');
 
 function DateModule () {
     return (<h2>{today}</h2>)
-
 }
 
 export default DateModule;

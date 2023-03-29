@@ -1,4 +1,6 @@
 import React, { useState, useRef, } from 'react'
+// import ReactDOM from 'react-dom/client';
+// import Countdown from 'react-countdown';
 
 
 const Timer = () => {
@@ -63,26 +65,25 @@ const Timer = () => {
 		clearTimer(getDeadTime(0.5));
 	}
 
-	
 	const onClickReset = () => {
-		
-	clearTimer(getDeadTime());
-		
+		clearTimer(getDeadTime());
 	}
-		
+
 	
-		
+
 	return (
-	<div className="box timer-module">
-		<h2>{timer}</h2>
-		
-		<div className="btn-group" role="group" aria-label="Basic example">
-			<button type="button" className="btn btn-primary" id="button1" onClick={onClickReset5}>5 min</button>
-			<button type="button" className="btn btn-primary" id="button2" onClick={onClickReset3}>3 min</button>
-			<button type="button" className="btn btn-primary" id="button3" onClick={onClickReset1}>0.5 min</button>
-			<button type="button" className="btn btn-primary" id="button4" onClick={onClickReset}>Stop</button>
-		</div>
-	</div>
+		<div className="box timer-module">
+            <div className="container">
+        	    <h1 class ="align-middle">{timer}</h1>
+			    
+                <div className="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" className="btn btn-primary" id="button1" onClick={onClickReset5}>5 min</button>
+                    <button type="button" className="btn btn-primary" id="button1" onClick={onClickReset3}>3 min</button>
+                    <button type="button" className="btn btn-primary" id="button1" onClick={onClickReset1}>0.5 min</button>
+					<button type="button" className="btn btn-primary" id="button1" onClick={onClickReset}>Stop</button>
+				</div>
+            </div>
+        </div>
 	)
 }
 
