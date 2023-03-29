@@ -37,22 +37,23 @@ const ActivitiesForm = () => {
   }
 
   return (
-    <div className="d-flex container justify-content-center">
-      <div className="d-flex align-items-center">
-        <div className="justify-content-center">
+    <div className="d-flex activity-container justify-content-center">
+      <div className="d-flex flex-column">
+        <div className="d-flex flex-row align-items-center form-container">
           <form onSubmit={handleFormSubmit}>
-              <input type="text" value={inputValue} placeholder='Singing...' onChange={handleInputChange} />
+              <input type="text" value={inputValue} placeholder='  Singing...' onChange={handleInputChange} />
           </form>
-          <button type="submit" className="btn btn-primary save-button" onClick={handleFormSubmit}>Save</button>
+          <button type="submit" className="btn btn-primary add-button" onClick={handleFormSubmit}>+</button>
         </div>
-      </div>
+        
 
-      <div className="buttons-container justify-content-center">
-        {saved.map((item, index) => (
-            <div key={index}>
-              <button className="btn btn-secondary custom-button" onClick={() => console.log('Button is clicked!')}>{item[0]}</button>
-            </div>
-        ))}
+        <div className="buttons-container justify-content-center">
+          {saved.map((item, index) => (
+              <div key={index}>
+                <button className="btn btn-secondary custom-button" onClick={() => console.log('Button is clicked!')}>{item[0]}</button>
+              </div>
+          ))}
+        </div>      
       </div>
     </div>
     
