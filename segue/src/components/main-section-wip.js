@@ -5,9 +5,6 @@ import './main-section.css';
 let randomPokemonIndex = Math.floor(Math.random()*150).toString();
 let GETurl = "https://pokeapi.co/api/v2/pokemon/" + randomPokemonIndex;
 let randomPokemonImage;
-let imageURL;
-let saved = JSON.parse(window.localStorage.getItem("formInput"))
-let currentIndex = 0;
 
 function fetchData() {
     fetch(GETurl)
