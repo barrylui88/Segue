@@ -1,7 +1,17 @@
-import React, { useState, useEffect }  from "react";
+import React, { useState }  from "react";
+import './ActivitiesForm.css'
 
-const saved = [];
+// Checking if formInput exists
+// so the page doesn't reset the data everytime users reload the page
+var saved = JSON.parse(window.localStorage.getItem("formInput"))
 
+if (saved === null || saved.length === 0)
+{
+  saved = [];
+  localStorage.setItem("formInput", JSON.stringify(saved));
+}
+
+// Main programme
 const ActivitiesForm = () => {
 
   const [inputValue, setInputValue] = useState("");
@@ -13,38 +23,39 @@ const ActivitiesForm = () => {
   const handleFormSubmit = (event) => {
     event.preventDefault();
     const savedItem = [inputValue];
-    // saved.push(inputValue);
-
-    // localStorage.setItem("formInput", [saved]);
     appendSaved(savedItem);
     setInputValue("");
   };
 
   function appendSaved(savedItem) {
-
     if(saved.length >= 4){
       saved.shift();
     }
     
     saved.push(savedItem);
     localStorage.setItem("formInput", JSON.stringify(saved));
-}
+  }
 
   return (
-    <form onSubmit={handleFormSubmit}>
-      <div className="row">
-          <div className="col">
-            <input type="text" value={inputValue} placeholder='Singing...' onChange={handleInputChange} />
-          </div>
+    <div className="d-flex container justify-content-center">
+      <div className="d-flex align-items-center">
+        <div className="justify-content-center">
+          <form onSubmit={handleFormSubmit}>
+              <input type="text" value={inputValue} placeholder='Singing...' onChange={handleInputChange} />
+          </form>
+          <button type="submit" className="btn btn-primary save-button">Save</button>
+        </div>
       </div>
-      {/* To get localStorage item */}
-      {/* <div>{saved[0]}</div> */}
-      <div className="row">
-          <div className="col">
-            <button type="submit" className="btn btn-primary save-button">Save</button>
-          </div>
+
+      <div className="buttons-container justify-content-center">
+        {saved.map((item, index) => (
+            <div key={index}>
+              <button className="btn btn-secondary custom-button" onClick={() => console.log('Button is clicked!')}>{item[0]}</button>
+            </div>
+        ))}
       </div>
-    </form>
+    </div>
+    
 
   );
 }
