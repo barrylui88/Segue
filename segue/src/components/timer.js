@@ -80,7 +80,7 @@ const Timer = () => {
                     <button type="button" className="btn btn-primary" id="button1" onClick={onClickReset5}>5 min</button>
                     <button type="button" className="btn btn-primary" id="button1" onClick={onClickReset3}>3 min</button>
                     <button type="button" className="btn btn-primary" id="button1" onClick={onClickReset1}>0.5 min</button>
-					<button type="button" className="btn btn-primary" id="button1" onClick={onClickReset}>Stop</button>
+					<button type="button" className="btn btn-primary" id="button1" onClick={onClickReset}>Skip</button>
 				</div>
             </div>
         </div>
