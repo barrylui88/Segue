@@ -66,7 +66,7 @@ const Timer = () => {
 	}
 
 	const onClickReset = () => {
-		clearTimer(getDeadTime());
+		clearTimer(getDeadTime(0));
 	}
 
 	
