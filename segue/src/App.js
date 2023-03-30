@@ -5,6 +5,7 @@ import DateModule from "./components/date";
 import Activities from './components/activities/index';
 //import ActivitiesForm from "./components/activities/ActivitiesForm";
 import Footer from "./components/footer";
+//import Button from "./components/button";
 import './App.css';
 import './components/timer.css';
 import './components/name.css';
@@ -20,25 +21,28 @@ function App() {
         <div className="text-center col name-module">
           <Name/>
         </div>
-        <div className="float-end col timer-module">
-          <Timer/>
+        <div className="float-end col timer-module" id="timer">
+        
+        <Timer/>
+      
         </div>
       </div> 
 
-      <div className="row start-body">
-        <div className="text-center col activity-module">
+      <div className="row">
+        <div className="float-start col start-body">
           <Activities/>
-        </div>
-      </div>
-
-      <div className="wip-body">
-        <MainSectionWip/>
-      </div>
+          </div>
       
 
-      <div class="text-center col footer-module">
+      <div className="float-end col wip-body">
+        <MainSectionWip/>
+      </div>
+      </div>
+
+      <div className="text-center footer-module">
         <Footer/>
       </div>
+      
     </div>
   );
 }
