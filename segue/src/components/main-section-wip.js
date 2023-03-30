@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect} from 'react'
+import React, { useState, useEffect} from 'react'
 import './main-section.css';
 
 //JS Variable
@@ -11,6 +11,7 @@ function fetchData() {
       .then((response) => response.json())
       .then((json) => {
         randomPokemonImage = json["sprites"]["other"]["official-artwork"]["front_default"];
+        console.log(randomPokemonImage)
       })
   }
 
