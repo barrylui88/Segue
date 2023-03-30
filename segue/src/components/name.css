@@ -1,5 +1,12 @@
+:root {
+    --primary: gold;
+    --secondary: white;
+    --tertiary: rgb(197, 190, 190);
+    --complementer: #61dafb;
+  } 
+
 .name-module {
-    background: linear-gradient(to right, gold, white, gold);
+    background: linear-gradient(to right, var(--primary), var(--secondary), var(--primary));
 }
 
   

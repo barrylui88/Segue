@@ -1,5 +1,12 @@
+:root {
+  --primary: gold;
+  --secondary: white;
+  --tertiary: rgb(197, 190, 190);
+  --complementer: #61dafb;
+} 
+
 .date-module {
-    background-color: gold;
+    background-color: var(--primary);
     
   }
   

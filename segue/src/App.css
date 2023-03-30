@@ -12,11 +12,24 @@
 body {
   background-color: var(--complementer);
 }
-.name-module {
-  letter-spacing: 0.2cm;
+
+.top-bar {
+  padding: 10px;
+  
 }
 
+.date-module {
+  text-align: center;
+}
 
+.name-module {
+  letter-spacing: 0.2cm;
+  text-align: center;
+}
+
+.timer-module {
+  text-align: center;
+}
 
 .start-body{
   display: inline;
@@ -25,3 +38,4 @@ body {
 .wip-body {
   display: inline;
 }
+
