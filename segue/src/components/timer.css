@@ -1,3 +1,10 @@
+:root {
+    --primary: gold;
+    --secondary: white;
+    --tertiary: rgb(197, 190, 190);
+    --complementer: #61dafb;
+  } 
+
 .timer-module {
-    background-color: gold;
+    background-color: var(--primary);
 }

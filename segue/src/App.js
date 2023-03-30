@@ -22,21 +22,19 @@ function App() {
           <Name/>
         </div>
         <div className="float-end col timer-module" id="timer">
-        
-        <Timer/>
-      
+          <Timer/>
         </div>
       </div> 
 
       <div className="row">
         <div className="float-start col start-body">
           <Activities/>
-          </div>
+        </div>
       
 
-      <div className="float-end col wip-body">
-        <MainSectionWip/>
-      </div>
+        <div className="float-end col wip-body">
+          <MainSectionWip/>
+        </div>
       </div>
 
       <div className="text-center footer-module">
