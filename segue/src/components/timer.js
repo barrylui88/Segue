@@ -23,16 +23,26 @@ const Timer = () => {
 	const startTimer = (e) => {
 		let { total, hours, minutes, seconds }
 					= getTimeRemaining(e);
-		if (total >= 0) {
+		if (total > 0) {
 
 			setTimer(
 				(hours > 9 ? hours : '0' + hours) + ':' +
 				(minutes > 9 ? minutes : '0' + minutes) + ':'
 				+ (seconds > 9 ? seconds : '0' + seconds)
 			)
-		}
-	}
-
+        }     
+        else if (total === 0) {
+            setTimer(
+				(hours = '00') + ':' +
+				(minutes = '00') + ':'
+				+ (seconds = '0' + 0)
+			)   
+            console.log("you can go")
+        }
+    }
+        
+    
+    
 
 	const clearTimer = (e) => {
 	
@@ -50,7 +60,7 @@ const Timer = () => {
 
 		
 		deadline.setSeconds(deadline.getSeconds() + min*60);
-		return deadline;
+            return deadline;
 	}
 
 	const onClickReset5 = () => {
@@ -68,6 +78,7 @@ const Timer = () => {
 	const onClickReset = () => {
 		clearTimer(getDeadTime(0));
 	}
+
 
 	
 
