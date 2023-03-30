@@ -1,7 +1,8 @@
 import React, { useState, useRef, } from 'react'
-// import ReactDOM from 'react-dom/client';
-// import Countdown from 'react-countdown';
-
+//  import ReactDOM from 'react-dom/client';
+//  import Countdown from 'react-countdown';
+//import ActivitiesForm from './activities/ActivitiesForm';
+//import SkipButton from './button'
 
 const Timer = () => {
 
@@ -37,7 +38,9 @@ const Timer = () => {
 				(minutes = '00') + ':'
 				+ (seconds = '0' + 0)
 			)   
-            console.log("you can go")
+			console.log("You can go");
+           
+				 
         }
     }
         
@@ -75,10 +78,15 @@ const Timer = () => {
 		clearTimer(getDeadTime(0.5));
 	}
 
+	
+
 	const onClickReset = () => {
 		clearTimer(getDeadTime(0));
+
 	}
 
+	
+	
 
 	
 
@@ -89,9 +97,12 @@ const Timer = () => {
 			    
                 <div className="btn-group" role="group" aria-label="Basic example">
                     <button type="button" className="btn btn-primary" id="button1" onClick={onClickReset5}>5 min</button>
-                    <button type="button" className="btn btn-primary" id="button1" onClick={onClickReset3}>3 min</button>
-                    <button type="button" className="btn btn-primary" id="button1" onClick={onClickReset1}>0.5 min</button>
-					<button type="button" className="btn btn-primary" id="button1" onClick={onClickReset}>Skip</button>
+                    <button type="button" className="btn btn-primary" id="button2" onClick={onClickReset3}>3 min</button>
+                    <button type="button" className="btn btn-primary" id="button3" onClick={onClickReset1}>0.5 min</button>
+					<button type="button" className="btn btn-primary" id="button3" onClick={onClickReset}>Skip</button>
+					
+					
+			
 				</div>
             </div>
         </div>

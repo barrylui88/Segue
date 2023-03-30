@@ -36,6 +36,7 @@ const ActivitiesForm = () => {
     localStorage.setItem("formInput", JSON.stringify(saved));
   }
 
+
   return (
     <div className="d-flex activity-container justify-content-center">
       <div className="d-flex flex-column">
