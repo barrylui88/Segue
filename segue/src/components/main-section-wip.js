@@ -30,7 +30,7 @@ function MainSectionWip() {
 
   return (
       <div>
-          <img src={currentImage} />
+          <img src={currentImage} alt=""/>
       </div>
   )
 }
