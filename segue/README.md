@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# Segue
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![badmath](https://img.shields.io/github/issues/barrylui88/Segue) ![batmath](https://img.shields.io/github/issues-pr-closed/barrylui88/Segue) ![badmath](https://img.shields.io/github/license/barrylui88/Segue)
 
-## Available Scripts
+</br>
 
-In the project directory, you can run:
+## Table of Contents
+* [Description](#description)
+* [Features](#features)
+* [Installation & Deployment](#installation-and-deployment)
+* [How to Use](#how-to-use)
+* [License](#license)
 
-### `npm start`
+</br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+</br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Description
 
-### `npm test`
+This project presents a real-world situation in which technologies provide a better solution for world. To celebrate the World Autism Day on 2nd April this year, we built this application in hope we could assist teachers/guardians to help kids in needs to understand time management better. This application works as a timer which has 3 different stages: the beginning of the activity, 3 mins and 30 secs before the activity ends. For each stage, different illustration appears to give assign to the kids that the stage has changed and the end of the activity is coming. Teachers/guardians can enter up to 4 activities in this application so the transition between the activities will be easier.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+</br>
 
-### `npm run build`
+![Application Demo](./assets/img/readme-01-application-demo.gif)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+</br>
+</br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+There are 3 main features in this application. The first feature is the activity form where users can enter up to 4 activities. While on the top right side, users can see the second feature, the timer with 3 aforedmentioned stages. The last feature is the illustrations of Pokemon which can be seen once the activity is started.
 
-### `npm run eject`
+</br>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Application Main Features](./assets/img/readme-02-features.JPG) 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+</br>
+</br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Timer
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+As mentioned before, there are 3 different stages of time: the beginning of the activity (5 mins), 3 mins and 30 secs before the activity ends. As we understand kids have different needs from one to another, we provide 4 buttons to help teachers giving more time or even moving on to the next activity quicker than planned depends on the ability of the kids in solving/finishing the activity. To build this timer, we use a npm package called [react-idle-timer](https://www.npmjs.com/package/react-idle-timer).
 
-## Learn More
+</br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Current Time](./assets/img/readme-03-morse-to-letter-demo.gif) 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+</br>
+</br>
 
-### Code Splitting
+### Activity Form
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To help users changing from one activity to another one, we create an acitivity form where users can add up to 4 activities. In this case, we use localstorage and react hooks to store the users input in a localstorage called `inputForm`. Once the activities are saved, users can click the `start` button to start the activity.
 
-### Analyzing the Bundle Size
+</br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Current Time](./assets/img/readme-04-letter-to-morse-demo.gif) 
 
-### Making a Progressive Web App
+</br>
+</br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Illustration using Pokemon API
 
-### Advanced Configuration
+As we understand that some kids find a difficulty in understanding time, we provide an illustration that changes on specific time or when the time stage changes. So kids will associate picture changes as the time and understand that the end of the activity is coming. To provide the illustration, we use [Pokemon API](https://pokeapi.co/) and call Pokemon pictures when the time stage changes. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+</br>
 
-### Deployment
+<img src="./assets/img/readme-05-weather-time-API.JPG" alt="current time and weather API" style="width: 630px">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+</br>
+</br>
 
-### `npm run build` fails to minify
+### Current Date
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+As an additional feature, we provide the current date on the top left corner of the application so users know the current date.
+
+</br>
+
+<img src="./assets/img/readme-07-saved-translation.JPG" alt="saved translation buttons" style="width: 630px">
+
+</br>
+
+<img src="./assets/img/readme-08-local-storage.JPG" alt="local storage" style="width: 630px">
+
+</br>
+</br>
+
+## Installation and Deployment
+
+The application can be accessed at following links.
+* [GitHub repository](https://github.com/barrylui88/Segue).
+* [Deployed application](https://barrylui88.github.io/MSegue/).
+
+To run the application locally, the installation of the packages is required. This can be done by running this command in terminal: `npm i`.
+
+</br>
+</br>
+
+## How to Use 
+
+* Enter the activity's name in the form and click `save` button.
+* Click `start` to start the activity.
+* Click the timer `5 mins` button to set the timer when you are ready to start.
+* Click `skip` button to skip the current activity and move onto the next activity.
+* Click `back` whenever you wish to go back to home.
+
+</br>
+</br>
+
+## License
+
+Licensed under the [MIT license](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt). See LICENSE for the full details.
